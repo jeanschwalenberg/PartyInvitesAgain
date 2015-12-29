@@ -30,7 +30,7 @@ namespace PartyInvitesAgain.Controllers
         public ViewResult RsvpForm(GuestResponse guestResponse) {
             if (ModelState.IsValid) {
                 //TODO: E-mail response to party planner
-                return View("Thanks!", guestResponse);
+                return View("Thanks", guestResponse);
             } else {
                 //there is a validation error
                 return View();
